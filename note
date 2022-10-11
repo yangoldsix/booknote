@@ -3,6 +3,12 @@ object oriented：面对的是多重classes的设计，classes和classes之间�
 
 classes的两个经典分类：
 class without pointer member(s)
-      complex
+      complex //复数
 class with pointer member(s)
       string
+
+object oriented programming, object oriented Design
+OOP, OOD
+Inheritace(继承)
+Composition(复合)
+Delegation(委托)

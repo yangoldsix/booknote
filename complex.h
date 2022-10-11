@@ -35,7 +35,7 @@ public:
     * 尽可能地用pass by reference，因为value是整包拷到栈，reference只是4个字节，速度快。
     * 因为引用，改了数据会影响到其他数据。不允许更改数据，可以加const。
     */
-    complex& operator += {const complex&};  //return by reference
+    complex& operator += { const complex& };  //return by reference
 
     //return by value
     double real () const { return re; } // 函数若在class body内定义完成，便自动成为inline候选人,但最终是否inline由编译器决定
@@ -153,7 +153,7 @@ complex::operator += (const complex& r)
 inline complex
 operator + (const complex& x, const complex& y)
 {
-    return complex(real(x)+real(y), imag(x)+imag(y));
+    return complex(real(x)+real(y), imag(x)+imag(y)); //新建了个临时对象complex
 }
 
 inline complex
